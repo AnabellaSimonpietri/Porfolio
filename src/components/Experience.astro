@@ -1,0 +1,57 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "2023",
+    title: "Responsable de Desarrollo Web, Base de Datos y Marketing Digital",
+    company: "Laboratorio de Investigación en Comunicación No Verbal",
+    description:
+      "Lideré el desarrollo y mantenimiento de sitios web internas con WordPress, mejorando la experiencia del usuario y generando un aumento en la interacción. También gestioné las bases de datos internas, logrando una eficiencia operativa. Desarrollé estrategias de Marketing Digital, incrementando el tráfico web en un 30% y mejorando la visibilidad en buscadores mediante campañas de mail marketing y SEO. Como creador de contenidos, aumenté la participación en redes sociales y mejoré la percepción de la marca.",
+    link: "https://hugolescano.com.ar/",
+  },
+  {
+    date: "Oct 2017 - Nov 2019",
+    title: "Asistente de Contenidos",
+    company: "Wisetraining/ TOTS SA",
+    description:
+      "Fuí responsable del mantenimiento de la web interna de la compañía con WordPress. También asumí la responsabilidad de gestionar bases de datos internas, asegurando la integridad y eficiencia del sistema. Además, lideré las iniciativas de Marketing Digital mediante el uso de herramientas como mail marketing, SEO y búsqueda. Mi rol también incluyó la gestión efectiva de la relación con clientes a través de un sistema CRM.",
+      link: "https://wisetraining.com.ar/",
+    },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
+
+<!-- Nuevo bloque para mostrar iconos de herramientas -->
+<div class="flex items-center gap-4 mt-8">
+  <img src="/skills/JavaScript-logo.png" alt="JavaScript" class="w-8 h-8" />
+  <img src="/skills/typescript-logo.png" alt="JavaScript" class="w-8 h-8" />
+  <img src="/skills/Wordpress-logo.png" alt="JavaScript" class="w-8 h-8" />
+  <img src="/skills/React-logo.png" alt="JavaScript" class="w-8 h-8" />  
+  <img src="/skills/vite-logo.png" alt="JavaScript" class="w-8 h-8" /> 
+  <img src="/skills/Redux-logo.png" alt="JavaScript" class="w-8 h-8" />  
+  <img src="/skills/bootstrap-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/Sass-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/Postgresql-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/sequelize-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/mongodb-logo.png" alt="JavaScript" class="w-8 h-8" />
+  <img src="/skills/LibreOffice-logo.png" alt="JavaScript" class="w-8 h-8" /> 
+  <img src="/skills/mysql-logo.png" alt="JavaScript" class="w-8 h-8" /> 
+  <img src="/skills/nodejs-logo.png" alt="JavaScript" class="w-8 h-8" />  
+  <img src="/skills/GitHub-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/git-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/Angular-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/HTML5-logo.png" alt="HTML" class="w-8 h-8" />
+  <img src="/skills/css-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/Jira-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/Slack-logo.png" alt="CSS" class="w-8 h-8" />
+  <img src="/skills/Canva-logo.png" alt="CSS" class="w-8 h-8" />
+</div>
