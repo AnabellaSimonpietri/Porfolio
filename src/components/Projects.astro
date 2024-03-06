@@ -6,6 +6,10 @@ import MongoIcon from "./icons/Mongo.astro"
 import JavaScriptIcon from "./icons/JavaScript.astro";
 import HTMLIcon from "./icons/HTML.astro";
 import CSSIcon from "./icons/CSS.astro";
+import BootstrapIcon from "./icons/Bootstrap.astro";
+import WordpressIcon from "./icons/Wordpress.astro";
+import PHPIcon from "./icons/PHP.astro";
+import MYSQLIcon from "./icons/MySQL.astro";
 import PlayIcon from "./icons/PlayIcon.astro";
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
@@ -41,17 +45,54 @@ const TAGS = {
     class: "bg-blue-500 text-white",
     icon: CSSIcon,
   },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-violet-500 text-white",
+    icon: BootstrapIcon,
+  },
+  WORDPRESS: {
+    name: "Wordpress",
+    class: "bg-blue-600 text white",
+    icon: WordpressIcon,
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-blue-300 text white",
+    icon: PHPIcon,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-blue-400 text white",
+    icon: MYSQLIcon,
+  }
 }
+
 const PROJECTS = [
+{
+  title: "Campus Virtual",
+  description:
+    "Lideré el desarrollo y mantenimiento de un campus virtual, mejorando continuamente la experiencia del usuario. Implementé mejoras visuales y funcionales para optimizar la usabilidad y la estética, asegurando una plataforma intuitiva y atractiva para los estudiantes.",
+  link: "https://www.hugolescano.com/campus/",
+  image: "/projects/campus-web-2023.jpg",
+  tags: [TAGS.WORDPRESS, TAGS.PHP, TAGS.MYSQL],
+},
+{
+  title: "E-commerce Eventos",
+  description:
+    "Me encargué del desarrollo y mantenimiento de un E-commerce dedicado a cursos y conferencias. Mi responsabilidad incluía la gestión y actualización constante del contenido, así como la supervisión de garantizar el correcto funcionamiento del carrito de compras y la integración fluida de las estadísticas de ventas para la toma de decisiones.",
+  link: "https://wisetraining.com.ar/",
+  image: "/projects/wisetraining-web.jpg",
+  tags: [TAGS.WORDPRESS, TAGS.PHP, TAGS.MYSQL],
+},
   {
     title: "Galería de Arte Virtual",
     description:
-      "Participe en un equipo de desarrollo ágil con sprints de una semana presentándole a un Product Owner avances sobre el desarrollo de una app completa de un E-commerce con diseño y desarrollo de las siguientes features: (CRUD de productos, auth, catálogo, checkout, emails transaccionales, dashboard, etc.).",
+      "Participé en un equipo de desarrollo ágil con sprints de una semana presentándole a un Product Owner avances sobre el desarrollo de una app completa de un E-commerce con diseño y desarrollo de las siguientes features: (CRUD de productos, auth, catálogo, checkout, emails transaccionales, dashboard, etc.).",
     link: "https://pf-arts-client.vercel.app/",
     github: "https://github.com/AnabellaSimonpietri/PF-Arts-Client",
-    videoLink: "https://youtu.be/1jWtWJrzroA", // Agrega el enlace del video aquí
+    videoLink: "https://youtu.be/1jWtWJrzroA",
     image: "/projects/Home.art.png",
-    tags: [TAGS.REACT, TAGS.VITE, TAGS.MONGO],
+    tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE, TAGS.MONGO, TAGS.BOOTSTRAP, TAGS.CSS],
   },
 //   {
 //     title: "Pink Dogs App",
