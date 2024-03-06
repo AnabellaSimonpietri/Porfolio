@@ -9,7 +9,8 @@ import CSSIcon from "./icons/CSS.astro";
 import BootstrapIcon from "./icons/Bootstrap.astro";
 import WordpressIcon from "./icons/Wordpress.astro";
 import PHPIcon from "./icons/PHP.astro";
-import MYSQLIcon from "./icons/MySQL.astro";
+import MySQLIcon from "./icons/MySQL.astro";
+import LibreOfficeIcon from "./icons/LibreOffice.astro";
 import PlayIcon from "./icons/PlayIcon.astro";
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
@@ -63,7 +64,12 @@ const TAGS = {
   MYSQL: {
     name: "MySQL",
     class: "bg-blue-400 text white",
-    icon: MYSQLIcon,
+    icon: MySQLIcon,
+  },
+  LIBREOFFICE: {
+    name: "LibreOffice",
+    class: "bg-green-400 text white",
+    icon: LibreOfficeIcon,
   }
 }
 
@@ -74,7 +80,7 @@ const PROJECTS = [
     "Lideré el desarrollo y mantenimiento de un campus virtual, mejorando continuamente la experiencia del usuario. Implementé mejoras visuales y funcionales para optimizar la usabilidad y la estética, asegurando una plataforma intuitiva y atractiva para los estudiantes.",
   link: "https://www.hugolescano.com/campus/",
   image: "/projects/campus-web-2023.jpg",
-  tags: [TAGS.WORDPRESS, TAGS.PHP, TAGS.MYSQL],
+  tags: [TAGS.WORDPRESS, TAGS.PHP, TAGS.MYSQL, TAGS.LIBREOFFICE],
 },
 {
   title: "E-commerce Eventos",
